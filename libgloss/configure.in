@@ -123,6 +123,9 @@ case "${target}" in
   mt-*-*)
         AC_CONFIG_SUBDIRS([mt])
 	;;
+  oldland-*-*)
+	AC_CONFIG_SUBDIRS([oldland])
+	;;
   v850*-*-*)
         AC_CONFIG_SUBDIRS([v850])
         ;;

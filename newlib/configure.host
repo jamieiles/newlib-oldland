@@ -236,6 +236,9 @@ case "${host_cpu}" in
   mt*)
 	machine_dir=mt
 	;;
+  oldland*)
+	machine_dir=oldland
+	;;
   nds32*)
 	machine_dir=nds32
 	libm_machine_dir=nds32
@@ -505,6 +508,9 @@ case "${host}" in
   nios2*)
 	sys_dir=
 	;;
+  oldland*)
+	sys_dir=
+	;;
   or1k-*-elf | or1knd-*-elf)
 	sys_dir=or1k
 	newlib_cflags="${newlib_cflags} -DREENTRANT_SYSCALLS_PROVIDED "
@@ -754,6 +760,9 @@ case "${host}" in
 	newlib_cflags="${newlib_cflags} -DHAVE_RENAME -DHAVE_SYSTEM -DMISSING_SYSCALL_NAMES"
 	;;
   nds32*)
+	syscall_dir=syscalls
+	;;
+  oldland*)
 	syscall_dir=syscalls
 	;;
   or1k*|or1knd*)

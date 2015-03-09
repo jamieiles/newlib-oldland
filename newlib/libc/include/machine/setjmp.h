@@ -235,6 +235,11 @@ _BEGIN_STD_C
 #define _JBLEN 16
 #endif
 
+#ifdef __oldland__
+#define _JBLEN 16
+#define _JBTYPE unsigned long
+#endif
+
 #ifdef __CRX__
 #define _JBLEN 9
 #endif
