@@ -762,7 +762,7 @@ case "${host}" in
   nds32*)
 	syscall_dir=syscalls
 	;;
-  oldland*)
+  oldland-*-elf* | oldland-*-rtems*)
 	syscall_dir=syscalls
 	;;
   or1k*|or1knd*)
