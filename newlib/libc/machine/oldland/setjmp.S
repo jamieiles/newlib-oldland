@@ -21,8 +21,8 @@ setjmp:
 	str32	$fp, [$r0, 0x34]
 	str32	$sp, [$r0, 0x38]
 	str32	$lr, [$r0, 0x3c]
-	gpsr	$r0
-	str32	$r0, [$r0, 0x40]
+	gpsr	$r1
+	str32	$r1, [$r0, 0x40]
 	mov	$r0, 0
 	ret
 

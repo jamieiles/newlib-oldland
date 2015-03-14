@@ -236,7 +236,7 @@ _BEGIN_STD_C
 #endif
 
 #ifdef __oldland__
-#define _JBLEN 16
+#define _JBLEN 18 /* 16 GPRs, PSR + padding. */
 #define _JBTYPE unsigned long
 #endif
 
